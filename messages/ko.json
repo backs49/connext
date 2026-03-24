@@ -1,0 +1,155 @@
+{
+  "Nav": {
+    "home": "홈",
+    "about": "회사소개",
+    "science": "사이언스 & 파이프라인",
+    "contact": "문의"
+  },
+  "Home": {
+    "meta": {
+      "title": "CONNEXT | Innovation for Regeneration",
+      "description": "차세대 면역 치료제의 미래를 여는 바이오벤처 코넥스트"
+    },
+    "hero": {
+      "tagline": "Science Meets Trust",
+      "headline": "차세대 면역 치료제의\n미래를 엽니다",
+      "subheadline": "재조합 TLR5 작용제와 콜라게나제 플랫폼 기술로\n미충족 의료 수요에 혁신적 솔루션을 제공합니다",
+      "ctaPipeline": "파이프라인 보기",
+      "ctaInvestor": "투자자 정보"
+    },
+    "metrics": {
+      "title": "핵심 지표"
+    },
+    "vision": {
+      "title": "비전",
+      "statement": "Innovation for Regeneration",
+      "description": "코넥스트는 재조합 단백질 기반 바이오의약품 개발을 통해\n면역항암과 재생의료 분야에서 미충족 의료 수요를 해결합니다"
+    },
+    "pipeline": {
+      "title": "파이프라인",
+      "subtitle": "혁신적 치료제 개발 현황",
+      "viewAll": "전체 파이프라인 보기"
+    },
+    "news": {
+      "title": "최신 소식",
+      "subtitle": "코넥스트의 주요 뉴스",
+      "viewAll": "전체 뉴스 보기"
+    },
+    "partners": {
+      "title": "파트너 & 투자자",
+      "subtitle": "함께하는 기관"
+    },
+    "cta": {
+      "pipeline": "파이프라인 탐색",
+      "pipelineDesc": "혁신적인 바이오의약품 파이프라인을 확인하세요",
+      "ir": "투자자 정보",
+      "irDesc": "IR 자료 및 재무 정보를 확인하세요",
+      "contact": "문의하기",
+      "contactDesc": "파트너십, 투자, 채용 문의"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "회사소개",
+      "description": "코넥스트는 2017년 설립된 임상단계 바이오벤처입니다"
+    },
+    "overview": {
+      "title": "회사 소개",
+      "subtitle": "코넥스트를 소개합니다",
+      "mission": "미션",
+      "missionText": "재조합 단백질 기술로 미충족 의료 수요를 해결하여 환자의 삶의 질을 향상시킵니다",
+      "vision": "비전",
+      "visionText": "글로벌 바이오제약 기업으로 성장하여 면역항암 및 재생의료 분야를 선도합니다",
+      "values": "핵심 가치",
+      "valuesText": "혁신 · 신뢰 · 협력 · 환자 중심"
+    },
+    "hero": {
+      "title": "회사소개",
+      "subtitle": "재조합 단백질 기반 혁신 바이오의약품으로\n미충족 의료 수요에 도전합니다"
+    },
+    "ceo": {
+      "title": "CEO 메시지",
+      "message": "코넥스트는 2017년 설립 이래, 재조합 단백질 기술을 기반으로 면역항암과 재생의료 분야에서 혁신적인 바이오의약품을 개발해 왔습니다. 우리의 핵심 기술 플랫폼인 TLR5 작용제와 콜라게나제는 전 세계 환자들의 미충족 의료 수요를 해결할 수 있는 잠재력을 가지고 있습니다.\n\n우리 팀은 과학적 엄밀함과 환자 중심의 가치관을 바탕으로, 글로벌 수준의 임상 개발을 추진하고 있습니다. 앞으로도 혁신과 신뢰를 바탕으로 바이오 산업의 미래를 선도하겠습니다.",
+      "name": "대표이사",
+      "position": "코넥스트 대표이사",
+      "readMore": "더 보기"
+    },
+    "timeline": {
+      "title": "연혁",
+      "subtitle": "코넥스트의 발자취"
+    },
+    "team": {
+      "title": "경영진 & 자문위원",
+      "subtitle": "코넥스트를 이끄는 전문가들",
+      "tabExecutive": "경영진",
+      "tabSAB": "자문위원(SAB)"
+    },
+    "facilities": {
+      "title": "시설",
+      "subtitle": "코넥스트의 연구 및 제조 인프라"
+    }
+  },
+  "Science": {
+    "meta": {
+      "title": "사이언스 & 파이프라인",
+      "description": "코넥스트의 핵심 기술 플랫폼과 파이프라인 현황"
+    },
+    "hero": {
+      "title": "사이언스 & 파이프라인",
+      "subtitle": "두 가지 핵심 플랫폼 기술로\n혁신적 바이오의약품을 개발합니다"
+    },
+    "tlr5": {
+      "title": "TLR5 작용제 플랫폼",
+      "subtitle": "재조합 TLR5 agonist 기반 면역 조절 치료제",
+      "step1Title": "면역 인식",
+      "step1Desc": "TLR5 수용체에 결합하여 선천면역 반응을 활성화합니다",
+      "step2Title": "사이토카인 조절",
+      "step2Desc": "면역 조절 사이토카인의 분비를 유도하여 면역 반응을 최적화합니다",
+      "step3Title": "치료 효과",
+      "step3Desc": "면역 기능을 정상화하여 질환 치료 효과를 달성합니다"
+    },
+    "collagenase": {
+      "title": "콜라게나제 플랫폼",
+      "subtitle": "세계 최초 재조합 콜라게나제 기반 치료제",
+      "description": "미생물 발현 시스템을 활용한 재조합 콜라게나제 생산 기술로,\n기존 동물 유래 콜라게나제 대비 높은 순도와 일관된 품질을 확보했습니다"
+    },
+    "pipeline": {
+      "title": "파이프라인",
+      "subtitle": "임상 파이프라인 현황",
+      "filterAll": "전체",
+      "filterTLR5": "TLR5 작용제",
+      "filterCollagenase": "콜라게나제",
+      "filterPreclinical": "전임상",
+      "filterPhase1": "임상 1상",
+      "filterPhase2": "임상 2상",
+      "filterPhase3": "임상 3상",
+      "detailIndication": "적응증",
+      "detailStage": "임상 단계",
+      "detailProgress": "진행률",
+      "detailMarket": "시장 규모",
+      "detailMilestones": "주요 마일스톤",
+      "stagePreclinical": "전임상",
+      "stagePhase1": "임상 1상",
+      "stagePhase2": "임상 2상",
+      "stagePhase3": "임상 3상",
+      "stageApproved": "허가"
+    }
+  },
+  "Common": {
+    "learnMore": "더 알아보기",
+    "close": "닫기",
+    "viewAll": "전체 보기",
+    "backToTop": "맨 위로"
+  },
+  "Footer": {
+    "companyName": "주식회사 코넥스트",
+    "tagline": "Innovation for Regeneration",
+    "quickLinks": "바로가기",
+    "contact": "연락처",
+    "email": "info@connext.co.kr",
+    "address": "충청북도",
+    "copyright": "© {year} CONNEXT Inc. All rights reserved.",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관"
+  }
+}

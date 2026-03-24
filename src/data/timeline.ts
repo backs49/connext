@@ -1,0 +1,66 @@
+import { TimelineEvent } from '@/types/timeline';
+
+export const timelineData: TimelineEvent[] = [
+  {
+    year: 2017,
+    month: 3,
+    title: 'Company Founded',
+    titleKo: '코넥스트 설립',
+    description: 'CONNEXT established with focus on recombinant protein therapeutics.',
+    descriptionKo: '재조합 단백질 치료제 개발을 위한 코넥스트 설립.',
+    highlight: true,
+  },
+  {
+    year: 2018,
+    title: 'Seed Funding',
+    titleKo: '시드 투자 유치',
+    description: 'Secured seed funding to initiate R&D operations.',
+    descriptionKo: 'R&D 운영을 위한 시드 투자 유치.',
+  },
+  {
+    year: 2019,
+    title: 'TLR5 Platform Established',
+    titleKo: 'TLR5 플랫폼 구축',
+    description: 'Established recombinant TLR5 agonist platform technology.',
+    descriptionKo: '재조합 TLR5 작용제 플랫폼 기술 구축.',
+    highlight: true,
+  },
+  {
+    year: 2020,
+    title: 'Series A Investment',
+    titleKo: '시리즈A 투자 유치',
+    description: 'Completed Series A funding round.',
+    descriptionKo: '시리즈A 투자 유치 완료.',
+  },
+  {
+    year: 2021,
+    title: 'Collagenase Platform',
+    titleKo: '콜라게나제 플랫폼 확보',
+    description: 'Developed world\'s first recombinant collagenase production technology.',
+    descriptionKo: '세계 최초 재조합 콜라게나제 생산 기술 개발.',
+    highlight: true,
+  },
+  {
+    year: 2022,
+    title: 'Series B & GMP Facility',
+    titleKo: '시리즈B & GMP 시설 확보',
+    description: 'Series B funding secured. GMP manufacturing facility established.',
+    descriptionKo: '시리즈B 투자 유치. GMP 제조시설 확보.',
+  },
+  {
+    year: 2023,
+    title: 'CNT-201 Phase 1 Complete',
+    titleKo: 'CNT-201 임상 1상 완료',
+    description: 'Successfully completed Phase 1 clinical trial for CNT-201 (Dupuytren\'s).',
+    descriptionKo: 'CNT-201 (듀피트렌) 임상 1상 성공적 완료.',
+    highlight: true,
+  },
+  {
+    year: 2024,
+    title: 'Series C & Global Phase 2',
+    titleKo: '시리즈C & 글로벌 임상 2상',
+    description: 'Raised ₩15B in Series C. Initiated global Phase 2 for CNT-201. Strategic partnership with Pharma Research.',
+    descriptionKo: '시리즈C 150억 투자 유치. CNT-201 글로벌 임상 2상 개시. 파마리서치와 전략적 파트너십 체결.',
+    highlight: true,
+  },
+];

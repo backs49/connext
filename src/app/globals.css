@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-navy-50: #E8EDF6;
+  --color-navy-100: #C5D1EA;
+  --color-navy-200: #8FA3D5;
+  --color-navy-300: #5975C0;
+  --color-navy-400: #2E54A9;
+  --color-navy-500: #0B3D91;
+  --color-navy-600: #093174;
+  --color-navy-700: #072557;
+  --color-navy-800: #04193A;
+  --color-navy-900: #020D1D;
+  --color-navy: #0B3D91;
+
+  --color-bio-50: #E5F6FC;
+  --color-bio-100: #B3E4F7;
+  --color-bio-200: #66C9EF;
+  --color-bio-300: #1AAFE7;
+  --color-bio-400: #00A3E0;
+  --color-bio-500: #0082B3;
+  --color-bio-600: #006286;
+  --color-bio: #00A3E0;
+
+  --color-teal-50: #E9F9F7;
+  --color-teal-100: #C8F0EC;
+  --color-teal-200: #91E1D9;
+  --color-teal-300: #5AD3C7;
+  --color-teal-400: #2EC4B6;
+  --color-teal-500: #259D92;
+  --color-teal-600: #1C766D;
+  --color-teal: #2EC4B6;
+
+  --color-midnight: #1A1A2E;
+  --color-midnight-light: #25253D;
+  --color-midnight-dark: #121222;
+
+  --color-surface-white: #FFFFFF;
+  --color-surface-gray: #F8F9FA;
+  --color-surface-muted: #E9ECEF;
+
+  --color-foreground: #171717;
+  --color-background: #FFFFFF;
+
+  /* Fonts */
+  --font-heading: var(--font-inter), 'Pretendard Variable', sans-serif;
+  --font-body: var(--font-source-sans), 'Pretendard Variable', sans-serif;
+  --font-kr: 'Pretendard Variable', sans-serif;
+
+  /* Custom spacing */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom fluid typography */
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
 }

@@ -1,0 +1,155 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "science": "Science & Pipeline",
+    "contact": "Contact"
+  },
+  "Home": {
+    "meta": {
+      "title": "CONNEXT | Innovation for Regeneration",
+      "description": "CONNEXT - Clinical-stage biotech pioneering next-generation immunotherapeutics"
+    },
+    "hero": {
+      "tagline": "Science Meets Trust",
+      "headline": "Opening the Future of\nNext-Gen Immunotherapeutics",
+      "subheadline": "Delivering innovative solutions for unmet medical needs\nthrough recombinant TLR5 agonist and collagenase platform technologies",
+      "ctaPipeline": "View Pipeline",
+      "ctaInvestor": "Investor Info"
+    },
+    "metrics": {
+      "title": "Key Metrics"
+    },
+    "vision": {
+      "title": "Vision",
+      "statement": "Innovation for Regeneration",
+      "description": "CONNEXT addresses unmet medical needs in immuno-oncology\nand regenerative medicine through recombinant protein-based biologics"
+    },
+    "pipeline": {
+      "title": "Pipeline",
+      "subtitle": "Innovative Drug Development Status",
+      "viewAll": "View Full Pipeline"
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "Key Updates from CONNEXT",
+      "viewAll": "View All News"
+    },
+    "partners": {
+      "title": "Partners & Investors",
+      "subtitle": "Our Trusted Partners"
+    },
+    "cta": {
+      "pipeline": "Explore Pipeline",
+      "pipelineDesc": "Discover our innovative biopharmaceutical pipeline",
+      "ir": "Investor Relations",
+      "irDesc": "Access IR materials and financial information",
+      "contact": "Contact Us",
+      "contactDesc": "Partnership, investment, and career inquiries"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "About Us",
+      "description": "CONNEXT is a clinical-stage biotech venture founded in 2017"
+    },
+    "overview": {
+      "title": "About Us",
+      "subtitle": "Introducing CONNEXT",
+      "mission": "Mission",
+      "missionText": "Improving patients' quality of life by addressing unmet medical needs through recombinant protein technology",
+      "vision": "Vision",
+      "visionText": "Growing into a global biopharmaceutical company leading immuno-oncology and regenerative medicine",
+      "values": "Core Values",
+      "valuesText": "Innovation · Trust · Collaboration · Patient-Centric"
+    },
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Challenging unmet medical needs with\ninnovative recombinant protein biologics"
+    },
+    "ceo": {
+      "title": "CEO Message",
+      "message": "Since its founding in 2017, CONNEXT has been developing innovative biopharmaceuticals in immuno-oncology and regenerative medicine based on recombinant protein technology. Our core technology platforms — TLR5 agonist and collagenase — hold the potential to address unmet medical needs for patients worldwide.\n\nOur team, guided by scientific rigor and patient-centric values, is driving clinical development at a global level. We will continue to lead the future of the bio industry with innovation and trust.",
+      "name": "CEO",
+      "position": "CEO, CONNEXT Inc.",
+      "readMore": "Read More"
+    },
+    "timeline": {
+      "title": "History",
+      "subtitle": "Our Journey"
+    },
+    "team": {
+      "title": "Leadership & Advisory Board",
+      "subtitle": "The Experts Leading CONNEXT",
+      "tabExecutive": "Leadership",
+      "tabSAB": "Scientific Advisory Board"
+    },
+    "facilities": {
+      "title": "Facilities",
+      "subtitle": "Our Research & Manufacturing Infrastructure"
+    }
+  },
+  "Science": {
+    "meta": {
+      "title": "Science & Pipeline",
+      "description": "CONNEXT's core technology platforms and pipeline status"
+    },
+    "hero": {
+      "title": "Science & Pipeline",
+      "subtitle": "Developing innovative biologics through\ntwo core platform technologies"
+    },
+    "tlr5": {
+      "title": "TLR5 Agonist Platform",
+      "subtitle": "Recombinant TLR5 agonist-based immune modulation therapeutics",
+      "step1Title": "Immune Recognition",
+      "step1Desc": "Binds to TLR5 receptors to activate innate immune response",
+      "step2Title": "Cytokine Modulation",
+      "step2Desc": "Induces secretion of immunomodulatory cytokines to optimize immune response",
+      "step3Title": "Therapeutic Effect",
+      "step3Desc": "Normalizes immune function to achieve therapeutic outcomes"
+    },
+    "collagenase": {
+      "title": "Collagenase Platform",
+      "subtitle": "World's first recombinant collagenase-based therapeutics",
+      "description": "Utilizing microbial expression systems for recombinant collagenase production,\nachieving higher purity and consistent quality compared to animal-derived collagenase"
+    },
+    "pipeline": {
+      "title": "Pipeline",
+      "subtitle": "Clinical Pipeline Status",
+      "filterAll": "All",
+      "filterTLR5": "TLR5 Agonist",
+      "filterCollagenase": "Collagenase",
+      "filterPreclinical": "Preclinical",
+      "filterPhase1": "Phase 1",
+      "filterPhase2": "Phase 2",
+      "filterPhase3": "Phase 3",
+      "detailIndication": "Indication",
+      "detailStage": "Clinical Stage",
+      "detailProgress": "Progress",
+      "detailMarket": "Market Size",
+      "detailMilestones": "Key Milestones",
+      "stagePreclinical": "Preclinical",
+      "stagePhase1": "Phase 1",
+      "stagePhase2": "Phase 2",
+      "stagePhase3": "Phase 3",
+      "stageApproved": "Approved"
+    }
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "close": "Close",
+    "viewAll": "View All",
+    "backToTop": "Back to Top"
+  },
+  "Footer": {
+    "companyName": "CONNEXT Inc.",
+    "tagline": "Innovation for Regeneration",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "email": "info@connext.co.kr",
+    "address": "Chungbuk, South Korea",
+    "copyright": "© {year} CONNEXT Inc. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { submitNewsletter } from '@/app/actions/contact';
+import { analytics } from '@/lib/analytics';
 
 export function NewsletterSubscribe() {
   const t = useTranslations('Newsroom.subscribe');
@@ -19,6 +20,7 @@ export function NewsletterSubscribe() {
     startTransition(async () => {
       const result = await submitNewsletter(formData);
       if (result.success) {
+        analytics.newsletterSubscribe();
         setSubmitted(true);
       } else {
         setError(result.error);

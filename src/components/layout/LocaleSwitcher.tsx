@@ -3,6 +3,7 @@
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
+import { analytics } from '@/lib/analytics';
 
 export function LocaleSwitcher({ className }: { className?: string }) {
   const locale = useLocale();
@@ -11,6 +12,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
 
   const toggleLocale = () => {
     const next = locale === 'ko' ? 'en' : 'ko';
+    analytics.localeSwitch(next);
     router.replace(pathname, { locale: next });
   };
 

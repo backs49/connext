@@ -10,6 +10,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 import { submitIRContact } from '@/app/actions/contact';
+import { analytics } from '@/lib/analytics';
 
 const contactSchema = z.object({
   name: z.string().min(1, 'Required'),
@@ -41,6 +42,7 @@ export function IRContactForm() {
       Object.entries(data).forEach(([key, value]) => formData.append(key, value));
       const result = await submitIRContact(formData);
       if (result.success) {
+        analytics.formSubmit('ir_contact');
         setSubmitted(true);
       } else {
         setError(result.error);

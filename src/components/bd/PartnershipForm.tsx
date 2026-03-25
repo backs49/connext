@@ -10,6 +10,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 import { submitPartnership } from '@/app/actions/contact';
+import { analytics } from '@/lib/analytics';
 
 const partnershipSchema = z.object({
   name: z.string().min(1),
@@ -45,6 +46,7 @@ export function PartnershipForm() {
       Object.entries(data).forEach(([key, value]) => formData.append(key, value));
       const result = await submitPartnership(formData);
       if (result.success) {
+        analytics.formSubmit('partnership');
         setSubmitted(true);
       } else {
         setError(result.error);

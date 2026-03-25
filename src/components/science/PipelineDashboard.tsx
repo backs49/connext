@@ -9,6 +9,7 @@ import { PipelineFilters } from './PipelineFilters';
 import dynamic from 'next/dynamic';
 import { PipelineCard } from './PipelineCard';
 import { pipelineData } from '@/data/pipeline';
+import { analytics } from '@/lib/analytics';
 
 const PipelineDetailModal = dynamic(
   () => import('./PipelineDetailModal').then(m => ({ default: m.PipelineDetailModal })),
@@ -56,7 +57,10 @@ export function PipelineDashboard() {
               >
                 <PipelineCard
                   item={item}
-                  onClick={() => setSelectedItem(item)}
+                  onClick={() => {
+                    analytics.pipelineView(item.candidateName);
+                    setSelectedItem(item);
+                  }}
                 />
               </motion.div>
             ))}

@@ -52,14 +52,9 @@ export function AboutHero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <motion.h1
-          className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-        >
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
           {t('title')}
-        </motion.h1>
+        </h1>
         <motion.p
           className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl whitespace-normal sm:whitespace-pre-line"
           initial={{ opacity: 0, y: 30 }}

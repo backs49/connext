@@ -6,9 +6,14 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { PipelineFilters } from './PipelineFilters';
+import dynamic from 'next/dynamic';
 import { PipelineCard } from './PipelineCard';
-import { PipelineDetailModal } from './PipelineDetailModal';
 import { pipelineData } from '@/data/pipeline';
+
+const PipelineDetailModal = dynamic(
+  () => import('./PipelineDetailModal').then(m => ({ default: m.PipelineDetailModal })),
+  { ssr: false }
+);
 import type { Platform, ClinicalStage, PipelineItem } from '@/types/pipeline';
 
 export function PipelineDashboard() {

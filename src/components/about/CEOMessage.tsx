@@ -46,11 +46,12 @@ export function CEOMessage() {
           <ScrollReveal direction="right">
             <div className="space-y-6">
               <motion.div
-                className="h-1 w-16 bg-gradient-to-r from-navy to-bio rounded-full"
-                initial={{ width: 0 }}
-                whileInView={{ width: 64 }}
+                className="h-1 w-16 rounded-full bg-bio"
+                style={{ transformOrigin: 'left' }}
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
               />
               <blockquote className="space-y-4">
                 {t('message')

@@ -1,7 +1,4 @@
-'use client';
-
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 
 type ButtonVariant = 'primary' | 'secondary' | 'accent' | 'ghost' | 'outline-inverse';
@@ -30,7 +27,7 @@ const sizeStyles: Record<ButtonSize, string> = {
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', children, href, ...props }, ref) => {
     const styles = cn(
-      'inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+      'inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-200 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
       variantStyles[variant],
       sizeStyles[size],
       className,
@@ -38,27 +35,16 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (href) {
       return (
-        <motion.a
-          href={href}
-          className={styles}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
+        <a href={href} className={styles}>
           {children}
-        </motion.a>
+        </a>
       );
     }
 
     return (
-      <motion.button
-        ref={ref}
-        className={styles}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        {...(props as any)}
-      >
+      <button ref={ref} className={styles} {...props}>
         {children}
-      </motion.button>
+      </button>
     );
   },
 );

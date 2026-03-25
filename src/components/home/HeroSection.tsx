@@ -72,14 +72,9 @@ export function HeroSection() {
           </span>
         </motion.div>
 
-        <motion.h1
-          className="mt-8 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl whitespace-normal sm:whitespace-pre-line"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-        >
+        <h1 className="mt-8 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl whitespace-normal sm:whitespace-pre-line">
           {t('headline')}
-        </motion.h1>
+        </h1>
 
         <motion.p
           className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl whitespace-normal sm:whitespace-pre-line"

@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 
-type ButtonVariant = 'primary' | 'secondary' | 'accent' | 'ghost';
+type ButtonVariant = 'primary' | 'secondary' | 'accent' | 'ghost' | 'outline-inverse';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -18,6 +18,7 @@ const variantStyles: Record<ButtonVariant, string> = {
   secondary: 'border-2 border-navy text-navy hover:bg-navy hover:text-white',
   accent: 'bg-teal text-white hover:bg-teal-500 shadow-lg shadow-teal/20',
   ghost: 'text-navy hover:bg-navy-50',
+  'outline-inverse': 'border-2 border-white/30 text-white hover:bg-white/10',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

@@ -59,7 +59,7 @@ export function PipelineDashboard() {
         </div>
 
         {filteredData.length === 0 && (
-          <p className="mt-12 text-center text-gray-400">No pipeline items match the selected filters.</p>
+          <p className="mt-12 text-center text-gray-400">{t('noResults')}</p>
         )}
 
         <PipelineDetailModal

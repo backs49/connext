@@ -15,10 +15,10 @@ export function Card({ children, className, hover = true, onClick }: CardProps) 
     <motion.div
       className={cn(
         'rounded-2xl border border-gray-100 bg-white p-6 shadow-sm',
-        hover && 'cursor-pointer',
+        hover && 'cursor-pointer transition-shadow hover:shadow-lg hover:shadow-navy/10',
         className,
       )}
-      whileHover={hover ? { y: -4, boxShadow: '0 20px 40px rgba(11, 61, 145, 0.08)' } : undefined}
+      whileHover={hover ? { y: -4 } : undefined}
       transition={{ duration: 0.2 }}
       onClick={onClick}
     >

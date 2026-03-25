@@ -24,7 +24,7 @@ export default async function IRPage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-midnight py-24 sm:py-32">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/80 to-midnight" />
+        <div className="absolute inset-0 bg-gradient-to-br from-midnight via-navy-800 to-midnight" />
         <Container className="relative z-10 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             {t('title')}

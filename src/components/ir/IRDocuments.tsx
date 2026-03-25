@@ -37,7 +37,7 @@ export function IRDocuments() {
   ] as const;
 
   return (
-    <section className="bg-gray-50 py-20 sm:py-28">
+    <section className="bg-surface-gray py-20 sm:py-28">
       <Container>
         <SectionHeading title={t('title')} subtitle={t('subtitle')} />
 

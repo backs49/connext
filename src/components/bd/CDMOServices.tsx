@@ -56,7 +56,7 @@ export function CDMOServices() {
   const t = useTranslations('BD.cdmo');
 
   return (
-    <section className="bg-gray-50 py-20 lg:py-28">
+    <section className="bg-surface-gray py-20 lg:py-28">
       <Container>
         <ScrollReveal>
           <SectionHeading title={t('title')} subtitle={t('subtitle')} />

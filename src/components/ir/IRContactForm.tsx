@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -20,6 +21,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export function IRContactForm() {
   const t = useTranslations('IR.contact');
+  const [submitted, setSubmitted] = useState(false);
 
   const {
     register,
@@ -32,6 +34,7 @@ export function IRContactForm() {
   const onSubmit = (data: ContactFormData) => {
     // Placeholder - form doesn't actually submit yet
     console.log('IR Contact form data:', data);
+    setSubmitted(true);
   };
 
   const inputStyles = cn(
@@ -41,6 +44,34 @@ export function IRContactForm() {
   );
 
   const errorStyles = 'mt-1 text-xs text-red-400';
+
+  if (submitted) {
+    return (
+      <section className="bg-midnight py-20 sm:py-28">
+        <Container>
+          <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-bio/20">
+              <svg
+                className="h-8 w-8 text-bio"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-bold text-white">{t('title')}</h2>
+            <p className="text-gray-400">
+              문의해 주셔서 감사합니다. 빠른 시일 내에 연락드리겠습니다.
+              <br />
+              Thank you for your inquiry. We will be in touch shortly.
+            </p>
+          </div>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="bg-midnight py-20 sm:py-28">

@@ -80,7 +80,8 @@
     },
     "timeline": {
       "title": "History",
-      "subtitle": "Our Journey"
+      "subtitle": "Our Journey",
+      "dragHint": "Drag to explore"
     },
     "team": {
       "title": "Leadership & Advisory Board",
@@ -115,7 +116,10 @@
     "collagenase": {
       "title": "Collagenase Platform",
       "subtitle": "World's first recombinant collagenase-based therapeutics",
-      "description": "Utilizing microbial expression systems for recombinant collagenase production,\nachieving higher purity and consistent quality compared to animal-derived collagenase"
+      "description": "Utilizing microbial expression systems for recombinant collagenase production,\nachieving higher purity and consistent quality compared to animal-derived collagenase",
+      "advantage1": "High Purity",
+      "advantage2": "Consistent Quality",
+      "advantage3": "Scalable Production"
     },
     "pipeline": {
       "title": "Pipeline",
@@ -136,7 +140,8 @@
       "stagePhase1": "Phase 1",
       "stagePhase2": "Phase 2",
       "stagePhase3": "Phase 3",
-      "stageApproved": "Approved"
+      "stageApproved": "Approved",
+      "noResults": "No pipeline items match the selected filters."
     }
   },
   "IR": {

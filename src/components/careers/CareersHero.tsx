@@ -12,27 +12,43 @@ export function CareersHero() {
       <div className="absolute inset-0 bg-gradient-to-br from-midnight via-navy-800 to-midnight" />
 
       {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(12)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute h-1 w-1 rounded-full bg-bio/15"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -20, 0],
-              opacity: [0.15, 0.4, 0.15],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 4,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
+      {/* Pre-computed deterministic positions to avoid hydration mismatches */}
+      {(() => {
+        const dotPositions = [
+          { left: '9%',  top: '31%', duration: 5.3, delay: 0.6 },
+          { left: '22%', top: '55%', duration: 4.0, delay: 1.3 },
+          { left: '31%', top: '19%', duration: 6.7, delay: 0.2 },
+          { left: '48%', top: '74%', duration: 3.8, delay: 1.8 },
+          { left: '56%', top: '40%', duration: 5.6, delay: 0.4 },
+          { left: '62%', top: '88%', duration: 4.7, delay: 1.0 },
+          { left: '70%', top: '13%', duration: 6.2, delay: 0.8 },
+          { left: '78%', top: '62%', duration: 3.6, delay: 1.5 },
+          { left: '85%', top: '27%', duration: 5.0, delay: 0.1 },
+          { left: '14%', top: '83%', duration: 4.4, delay: 1.7 },
+          { left: '42%', top: '47%', duration: 6.5, delay: 0.9 },
+          { left: '91%', top: '69%', duration: 4.2, delay: 1.1 },
+        ];
+        return (
+          <div className="absolute inset-0 overflow-hidden">
+            {dotPositions.map((pos, i) => (
+              <motion.div
+                key={i}
+                className="absolute h-1 w-1 rounded-full bg-bio/15"
+                style={{ left: pos.left, top: pos.top }}
+                animate={{
+                  y: [0, -20, 0],
+                  opacity: [0.15, 0.4, 0.15],
+                }}
+                transition={{
+                  duration: pos.duration,
+                  repeat: Infinity,
+                  delay: pos.delay,
+                }}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">

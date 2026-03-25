@@ -80,7 +80,8 @@
     },
     "timeline": {
       "title": "연혁",
-      "subtitle": "코넥스트의 발자취"
+      "subtitle": "코넥스트의 발자취",
+      "dragHint": "드래그하여 탐색"
     },
     "team": {
       "title": "경영진 & 자문위원",
@@ -115,7 +116,10 @@
     "collagenase": {
       "title": "콜라게나제 플랫폼",
       "subtitle": "세계 최초 재조합 콜라게나제 기반 치료제",
-      "description": "미생물 발현 시스템을 활용한 재조합 콜라게나제 생산 기술로,\n기존 동물 유래 콜라게나제 대비 높은 순도와 일관된 품질을 확보했습니다"
+      "description": "미생물 발현 시스템을 활용한 재조합 콜라게나제 생산 기술로,\n기존 동물 유래 콜라게나제 대비 높은 순도와 일관된 품질을 확보했습니다",
+      "advantage1": "고순도",
+      "advantage2": "일관된 품질",
+      "advantage3": "대량 생산 가능"
     },
     "pipeline": {
       "title": "파이프라인",
@@ -136,7 +140,8 @@
       "stagePhase1": "임상 1상",
       "stagePhase2": "임상 2상",
       "stagePhase3": "임상 3상",
-      "stageApproved": "허가"
+      "stageApproved": "허가",
+      "noResults": "선택한 필터에 해당하는 파이프라인 항목이 없습니다"
     }
   },
   "IR": {

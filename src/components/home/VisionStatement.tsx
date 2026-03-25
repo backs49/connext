@@ -18,7 +18,7 @@ export function VisionStatement() {
             <h2 className="mt-4 text-3xl font-bold text-navy sm:text-4xl lg:text-5xl">
               {t('statement')}
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-gray-600 whitespace-pre-line">
+            <p className="mt-6 text-lg leading-relaxed text-gray-600 whitespace-normal sm:whitespace-pre-line">
               {t('description')}
             </p>
           </div>

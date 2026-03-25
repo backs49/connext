@@ -35,7 +35,7 @@ export function MobileNav({ isOpen, onClose, navItems }: MobileNavProps) {
             onClick={onClose}
           />
           <motion.div
-            className="fixed right-0 top-0 bottom-0 z-50 w-80 bg-white shadow-2xl"
+            className="fixed right-0 top-0 bottom-0 z-50 w-[85vw] max-w-80 bg-white shadow-2xl"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}

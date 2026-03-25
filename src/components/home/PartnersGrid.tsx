@@ -17,14 +17,14 @@ export function PartnersGrid() {
         </ScrollReveal>
 
         <ScrollReveal>
-          <div className="grid grid-cols-3 gap-8 md:grid-cols-6 items-center">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-6 md:gap-8 items-center">
             {partnersData.map((partner) => (
               <div
                 key={partner.id}
-                className="flex items-center justify-center rounded-xl border border-gray-100 bg-white p-6 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:shadow-md"
+                className="flex items-center justify-center rounded-xl border border-gray-100 bg-white p-3 sm:p-6 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:shadow-md"
               >
                 <div className="text-center">
-                  <div className="h-8 w-20 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-500">
+                  <div className="h-8 w-full max-w-[80px] bg-gray-200 rounded flex items-center justify-center text-xs text-gray-500">
                     {partner.name}
                   </div>
                 </div>

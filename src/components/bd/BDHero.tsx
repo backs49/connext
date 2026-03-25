@@ -7,7 +7,7 @@ export function BDHero() {
   const t = useTranslations('BD.hero');
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden bg-midnight py-32 lg:py-40">
+    <section className="relative flex items-center justify-center overflow-hidden bg-midnight py-20 sm:py-28 lg:py-40">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-midnight via-navy-800 to-midnight" />
 

@@ -13,7 +13,7 @@ export function MetricsBanner() {
     <section className="py-16 bg-surface-gray">
       <Container>
         <ScrollReveal>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 md:gap-8">
             {metricsData.map((metric) => (
               <div key={metric.id} className="text-center">
                 <div className="text-3xl font-bold text-navy sm:text-4xl lg:text-5xl">

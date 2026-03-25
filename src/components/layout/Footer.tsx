@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-midnight text-white">
       <Container className="py-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold">CONNEXT</h3>

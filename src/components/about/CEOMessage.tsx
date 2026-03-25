@@ -19,7 +19,7 @@ export function CEOMessage() {
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           {/* Left: CEO photo placeholder */}
           <ScrollReveal direction="left">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-navy/10 to-bio/10 flex items-center justify-center overflow-hidden">
                 <div className="text-center">
                   <svg

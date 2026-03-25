@@ -75,7 +75,7 @@ export function Benefits() {
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
           {benefits.map((benefit, index) => (
             <ScrollReveal key={benefit.key} delay={index * 0.08}>
-              <div className="flex flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div className="flex flex-col items-center gap-3 rounded-2xl bg-white p-4 sm:p-6 text-center shadow-sm">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-50">
                   {benefit.icon}
                 </div>

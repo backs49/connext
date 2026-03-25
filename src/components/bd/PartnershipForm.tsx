@@ -121,7 +121,7 @@ export function PartnershipForm() {
           </div>
 
           <div className="text-center">
-            <Button type="submit" variant="accent" size="lg">
+            <Button type="submit" variant="accent" size="lg" className="w-full sm:w-auto">
               {t('submit')}
             </Button>
           </div>

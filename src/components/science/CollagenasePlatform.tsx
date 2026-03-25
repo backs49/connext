@@ -43,7 +43,7 @@ export function CollagenasePlatform() {
 
           {/* Diagram Placeholder */}
           <ScrollReveal direction="right" delay={0.2}>
-            <div className="relative flex items-center justify-center rounded-2xl border-2 border-dashed border-teal/30 bg-teal-50/50 p-12 aspect-square max-h-[420px]">
+            <div className="relative flex items-center justify-center rounded-2xl border-2 border-dashed border-teal/30 bg-teal-50/50 p-6 sm:p-12 aspect-square max-h-[420px]">
               {/* Placeholder illustration */}
               <div className="flex flex-col items-center gap-4 text-center">
                 <svg

@@ -16,7 +16,7 @@ export function TeamCard({ member }: TeamCardProps) {
   const bio = locale === 'ko' ? member.bioKo : member.bio;
 
   return (
-    <Card className="text-center p-8" hover>
+    <Card className="text-center p-4 sm:p-6 lg:p-8" hover>
       {/* Image placeholder */}
       <div className="mx-auto mb-5 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-navy/10 to-bio/10">
         <svg

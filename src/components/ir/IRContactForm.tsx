@@ -120,7 +120,7 @@ export function IRContactForm() {
           </div>
 
           <div className="pt-2">
-            <Button type="submit" variant="accent" size="lg">
+            <Button type="submit" variant="accent" size="lg" className="w-full sm:w-auto">
               {t('submit')}
             </Button>
           </div>

@@ -7,7 +7,7 @@ export function AboutHero() {
   const t = useTranslations('About.hero');
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden bg-midnight py-32 lg:py-40">
+    <section className="relative flex items-center justify-center overflow-hidden bg-midnight py-20 sm:py-28 lg:py-40">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-midnight via-navy-800 to-midnight" />
 
@@ -45,7 +45,7 @@ export function AboutHero() {
           {t('title')}
         </motion.h1>
         <motion.p
-          className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl whitespace-pre-line"
+          className="mx-auto mt-6 max-w-2xl text-lg text-gray-300 sm:text-xl whitespace-normal sm:whitespace-pre-line"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}

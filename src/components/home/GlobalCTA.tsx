@@ -45,7 +45,7 @@ export function GlobalCTA() {
   return (
     <section className="py-24">
       <Container>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {ctaItems.map((item, idx) => (
             <ScrollReveal key={item.key} delay={idx * 0.1}>
               <Link href={item.href}>

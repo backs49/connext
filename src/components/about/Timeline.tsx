@@ -34,7 +34,7 @@ export function Timeline() {
             style={{ x }}
           >
             {/* Left padding */}
-            <div className="min-w-[calc(50vw-200px)] shrink-0" />
+            <div className="min-w-[20px] sm:min-w-[calc(50vw-200px)] shrink-0" />
 
             {timelineData.map((event, index) => (
               <div
@@ -104,7 +104,7 @@ export function Timeline() {
             ))}
 
             {/* Right padding */}
-            <div className="min-w-[calc(50vw-200px)] shrink-0" />
+            <div className="min-w-[20px] sm:min-w-[calc(50vw-200px)] shrink-0" />
           </motion.div>
         </div>
 

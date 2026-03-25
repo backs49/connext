@@ -21,7 +21,7 @@ export function PipelineCard({ item, onClick }: PipelineCardProps) {
   return (
     <Card onClick={onClick} className="flex flex-col gap-4">
       <div className="flex items-start justify-between gap-2">
-        <h3 className="text-lg font-bold text-navy">{item.candidateName}</h3>
+        <h3 className="text-lg font-bold text-navy min-w-0 line-clamp-2">{item.candidateName}</h3>
         <Badge variant={platformBadge.variant}>{platformBadge.label}</Badge>
       </div>
 

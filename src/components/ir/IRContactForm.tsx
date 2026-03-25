@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -9,6 +9,7 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
+import { submitIRContact } from '@/app/actions/contact';
 
 const contactSchema = z.object({
   name: z.string().min(1, 'Required'),
@@ -22,6 +23,8 @@ type ContactFormData = z.infer<typeof contactSchema>;
 export function IRContactForm() {
   const t = useTranslations('IR.contact');
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const [isPending, startTransition] = useTransition();
 
   const {
     register,
@@ -32,9 +35,17 @@ export function IRContactForm() {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    // Placeholder - form doesn't actually submit yet
-    console.log('IR Contact form data:', data);
-    setSubmitted(true);
+    setError('');
+    startTransition(async () => {
+      const formData = new FormData();
+      Object.entries(data).forEach(([key, value]) => formData.append(key, value));
+      const result = await submitIRContact(formData);
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setError(result.error);
+      }
+    });
   };
 
   const inputStyles = cn(
@@ -150,9 +161,13 @@ export function IRContactForm() {
             )}
           </div>
 
+          {error && (
+            <p className="text-sm text-red-400">{error}</p>
+          )}
+
           <div className="pt-2">
-            <Button type="submit" variant="accent" size="lg" className="w-full sm:w-auto">
-              {t('submit')}
+            <Button type="submit" variant="accent" size="lg" className="w-full sm:w-auto" disabled={isPending}>
+              {isPending ? '...' : t('submit')}
             </Button>
           </div>
         </form>

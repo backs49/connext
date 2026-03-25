@@ -1,17 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { submitNewsletter } from '@/app/actions/contact';
 
 export function NewsletterSubscribe() {
   const t = useTranslations('Newsroom.subscribe');
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const [isPending, startTransition] = useTransition();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError('');
+    const formData = new FormData(e.currentTarget);
+    startTransition(async () => {
+      const result = await submitNewsletter(formData);
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setError(result.error);
+      }
+    });
   };
 
   return (
@@ -47,14 +59,20 @@ export function NewsletterSubscribe() {
             className="mx-auto mt-10 flex max-w-md flex-col gap-3 sm:flex-row"
           >
             <input
+              name="email"
               type="email"
+              required
               placeholder={t('placeholder')}
               className="flex-1 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-white placeholder-white/50 focus:border-bio focus:outline-none focus:ring-1 focus:ring-bio transition-colors duration-200"
             />
-            <Button type="submit" variant="accent" size="md">
-              {t('button')}
+            <Button type="submit" variant="accent" size="md" disabled={isPending}>
+              {isPending ? '...' : t('button')}
             </Button>
           </form>
+        )}
+
+        {error && (
+          <p className="mt-4 text-sm text-red-400">{error}</p>
         )}
       </Container>
     </section>

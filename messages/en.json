@@ -3,6 +3,10 @@
     "home": "Home",
     "about": "About",
     "science": "Science & Pipeline",
+    "ir": "IR",
+    "newsroom": "Newsroom",
+    "bd": "Business",
+    "careers": "Careers",
     "contact": "Contact"
   },
   "Home": {
@@ -133,6 +137,164 @@
       "stagePhase2": "Phase 2",
       "stagePhase3": "Phase 3",
       "stageApproved": "Approved"
+    }
+  },
+  "IR": {
+    "meta": {
+      "title": "Investor Relations",
+      "description": "CONNEXT investment information, IR materials, and financial data"
+    },
+    "hero": {
+      "title": "Investor Relations",
+      "subtitle": "Explore CONNEXT's growth value\nand investment information"
+    },
+    "highlights": {
+      "title": "Investment Highlights",
+      "subtitle": "Key Investment Metrics",
+      "totalInvestment": "Total Investment",
+      "investors": "Institutional Investors",
+      "seriesStage": "Funding Round",
+      "founded": "Year Founded"
+    },
+    "documents": {
+      "title": "IR Documents",
+      "subtitle": "Download investment-related materials",
+      "businessReport": "Business Report",
+      "investorDeck": "Investor Presentation",
+      "financialData": "Financial Data",
+      "download": "Download",
+      "comingSoon": "Coming Soon"
+    },
+    "calendar": {
+      "title": "IR Calendar",
+      "subtitle": "Upcoming conferences and IR events",
+      "noEvents": "No upcoming events scheduled"
+    },
+    "contact": {
+      "title": "IR Contact",
+      "subtitle": "For investment inquiries, please reach out below",
+      "name": "Name",
+      "email": "Email",
+      "company": "Organization",
+      "message": "Message",
+      "submit": "Submit Inquiry",
+      "directContact": "IR Direct Contact"
+    }
+  },
+  "Newsroom": {
+    "meta": {
+      "title": "Newsroom",
+      "description": "Latest news, press releases, and events from CONNEXT"
+    },
+    "hero": {
+      "title": "Newsroom",
+      "subtitle": "Stay updated with the latest news\nand achievements from CONNEXT"
+    },
+    "filter": {
+      "all": "All",
+      "press": "Press Release",
+      "publication": "Publication",
+      "event": "Event"
+    },
+    "featured": "Featured",
+    "subscribe": {
+      "title": "Newsletter",
+      "subtitle": "Get the latest updates from CONNEXT",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe"
+    },
+    "noResults": "No news found in this category",
+    "share": "Share"
+  },
+  "BD": {
+    "meta": {
+      "title": "Business Development",
+      "description": "CONNEXT business model, licensing, and CDMO services"
+    },
+    "hero": {
+      "title": "Business Development",
+      "subtitle": "Diverse business opportunities powered by\ninnovative platform technologies"
+    },
+    "model": {
+      "title": "Business Model",
+      "subtitle": "CONNEXT's value creation structure",
+      "licensing": "Technology Licensing",
+      "licensingDesc": "Revenue generation through global licensing of core platform technologies",
+      "codevelopment": "Co-Development",
+      "codevelopmentDesc": "Clinical co-development partnerships with global pharma companies",
+      "cdmo": "CDMO Business",
+      "cdmoDesc": "Contract manufacturing for microbial recombinant proteins and pDNA"
+    },
+    "cdmo": {
+      "title": "CDMO Services",
+      "subtitle": "Microbial recombinant protein and pDNA production",
+      "capability1": "Recombinant Protein",
+      "capability1Desc": "High-purity recombinant protein production using E.coli expression systems",
+      "capability2": "pDNA Production",
+      "capability2Desc": "GMP-grade plasmid DNA mass production",
+      "capability3": "Process Development",
+      "capability3Desc": "Process optimization and scale-up for commercialization",
+      "capability4": "Analytical Services",
+      "capability4Desc": "Quality control and characterization services"
+    },
+    "partnership": {
+      "title": "Partnership Inquiry",
+      "subtitle": "Interested in collaboration? Contact us",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "type": "Inquiry Type",
+      "typeLicensing": "Licensing",
+      "typeCodevelopment": "Co-Development",
+      "typeCDMO": "CDMO",
+      "typeOther": "Other",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "Careers": {
+    "meta": {
+      "title": "Careers",
+      "description": "Join CONNEXT - Build the future of biopharmaceuticals"
+    },
+    "hero": {
+      "title": "Careers",
+      "subtitle": "Join us in building the future of\ninnovative biopharmaceuticals"
+    },
+    "culture": {
+      "title": "Our Culture",
+      "subtitle": "How we work at CONNEXT",
+      "value1": "Scientific Rigor",
+      "value1Desc": "We pursue data-driven and evidence-based decision making",
+      "value2": "Patient-Centric",
+      "value2Desc": "Patients are at the center of all our research and development",
+      "value3": "Collaboration",
+      "value3Desc": "We communicate and collaborate freely across departments",
+      "value4": "Growth Mindset",
+      "value4Desc": "We encourage new challenges and support continuous growth"
+    },
+    "benefits": {
+      "title": "Benefits",
+      "subtitle": "Perks for our team members",
+      "item1": "Flexible Work",
+      "item2": "Stock Options",
+      "item3": "Education Support",
+      "item4": "Health Check-ups",
+      "item5": "Family Events",
+      "item6": "Self-Development"
+    },
+    "openings": {
+      "title": "Open Positions",
+      "subtitle": "Currently hiring",
+      "noOpenings": "No open positions at the moment. Please check back for updates.",
+      "apply": "Apply",
+      "department": "Department",
+      "location": "Location",
+      "type": "Employment Type"
+    },
+    "life": {
+      "title": "Life at CONNEXT",
+      "subtitle": "A day in the life at CONNEXT"
     }
   },
   "Common": {

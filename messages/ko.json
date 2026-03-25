@@ -3,6 +3,10 @@
     "home": "홈",
     "about": "회사소개",
     "science": "사이언스 & 파이프라인",
+    "ir": "IR",
+    "newsroom": "뉴스룸",
+    "bd": "사업개발",
+    "careers": "채용",
     "contact": "문의"
   },
   "Home": {
@@ -133,6 +137,164 @@
       "stagePhase2": "임상 2상",
       "stagePhase3": "임상 3상",
       "stageApproved": "허가"
+    }
+  },
+  "IR": {
+    "meta": {
+      "title": "투자자 관계 (IR)",
+      "description": "코넥스트 투자 정보, IR 자료실, 재무 데이터"
+    },
+    "hero": {
+      "title": "투자자 관계",
+      "subtitle": "코넥스트의 성장 가치와\n투자 정보를 확인하세요"
+    },
+    "highlights": {
+      "title": "투자 하이라이트",
+      "subtitle": "핵심 투자 지표",
+      "totalInvestment": "누적 투자액",
+      "investors": "투자 기관",
+      "seriesStage": "투자 라운드",
+      "founded": "설립연도"
+    },
+    "documents": {
+      "title": "IR 자료실",
+      "subtitle": "투자 관련 자료를 다운로드하세요",
+      "businessReport": "사업보고서",
+      "investorDeck": "투자설명회 자료",
+      "financialData": "재무 데이터",
+      "download": "다운로드",
+      "comingSoon": "준비중"
+    },
+    "calendar": {
+      "title": "IR 캘린더",
+      "subtitle": "주요 컨퍼런스 및 IR 이벤트 일정",
+      "noEvents": "예정된 이벤트가 없습니다"
+    },
+    "contact": {
+      "title": "IR 문의",
+      "subtitle": "투자 관련 문의는 아래로 연락 주세요",
+      "name": "이름",
+      "email": "이메일",
+      "company": "소속기관",
+      "message": "문의 내용",
+      "submit": "문의하기",
+      "directContact": "IR 담당자 직통"
+    }
+  },
+  "Newsroom": {
+    "meta": {
+      "title": "뉴스룸",
+      "description": "코넥스트의 최신 소식, 보도자료, 행사 정보"
+    },
+    "hero": {
+      "title": "뉴스룸",
+      "subtitle": "코넥스트의 최신 소식과\n주요 성과를 확인하세요"
+    },
+    "filter": {
+      "all": "전체",
+      "press": "보도자료",
+      "publication": "논문",
+      "event": "행사"
+    },
+    "featured": "주요 뉴스",
+    "subscribe": {
+      "title": "뉴스레터 구독",
+      "subtitle": "코넥스트의 최신 소식을 받아보세요",
+      "placeholder": "이메일 주소를 입력하세요",
+      "button": "구독하기"
+    },
+    "noResults": "해당 카테고리의 뉴스가 없습니다",
+    "share": "공유"
+  },
+  "BD": {
+    "meta": {
+      "title": "사업개발",
+      "description": "코넥스트의 사업모델, 라이선싱, CDMO 사업 소개"
+    },
+    "hero": {
+      "title": "사업개발",
+      "subtitle": "혁신적 기술 플랫폼 기반의\n다양한 사업 기회를 제공합니다"
+    },
+    "model": {
+      "title": "사업모델",
+      "subtitle": "코넥스트의 가치 창출 구조",
+      "licensing": "기술 라이선싱",
+      "licensingDesc": "핵심 플랫폼 기술의 글로벌 라이선싱을 통한 수익 창출",
+      "codevelopment": "공동개발",
+      "codevelopmentDesc": "글로벌 제약사와의 공동 임상 개발 파트너십",
+      "cdmo": "CDMO 사업",
+      "cdmoDesc": "미생물 기반 재조합 단백질 및 pDNA 위탁생산"
+    },
+    "cdmo": {
+      "title": "CDMO 서비스",
+      "subtitle": "미생물 기반 재조합 단백질 및 pDNA 생산",
+      "capability1": "재조합 단백질 생산",
+      "capability1Desc": "E.coli 기반 고순도 재조합 단백질 생산",
+      "capability2": "pDNA 생산",
+      "capability2Desc": "GMP 등급 plasmid DNA 대량 생산",
+      "capability3": "공정 개발",
+      "capability3Desc": "상업화를 위한 공정 최적화 및 스케일업",
+      "capability4": "분석 서비스",
+      "capability4Desc": "품질 관리 및 특성 분석 서비스"
+    },
+    "partnership": {
+      "title": "파트너십 문의",
+      "subtitle": "사업 협력에 관심이 있으시면 연락 주세요",
+      "name": "이름",
+      "email": "이메일",
+      "company": "회사명",
+      "type": "문의 유형",
+      "typeLicensing": "라이선싱",
+      "typeCodevelopment": "공동개발",
+      "typeCDMO": "CDMO",
+      "typeOther": "기타",
+      "message": "문의 내용",
+      "submit": "문의하기"
+    }
+  },
+  "Careers": {
+    "meta": {
+      "title": "채용",
+      "description": "코넥스트와 함께할 인재를 찾습니다"
+    },
+    "hero": {
+      "title": "채용",
+      "subtitle": "혁신적인 바이오의약품 개발의\n미래를 함께 만들어갈 인재를 찾습니다"
+    },
+    "culture": {
+      "title": "기업 문화",
+      "subtitle": "코넥스트가 일하는 방식",
+      "value1": "과학적 엄밀함",
+      "value1Desc": "데이터와 근거에 기반한 의사결정을 추구합니다",
+      "value2": "환자 중심",
+      "value2Desc": "모든 연구와 개발의 중심에 환자가 있습니다",
+      "value3": "협업과 소통",
+      "value3Desc": "부서 간 경계를 넘어 자유롭게 소통하고 협력합니다",
+      "value4": "도전과 성장",
+      "value4Desc": "새로운 시도를 장려하고 지속적인 성장을 지원합니다"
+    },
+    "benefits": {
+      "title": "복지 혜택",
+      "subtitle": "코넥스트와 함께하는 직원을 위한 혜택",
+      "item1": "유연근무제",
+      "item2": "스톡옵션",
+      "item3": "교육비 지원",
+      "item4": "건강검진",
+      "item5": "경조사 지원",
+      "item6": "자기개발비"
+    },
+    "openings": {
+      "title": "채용 공고",
+      "subtitle": "현재 모집 중인 포지션",
+      "noOpenings": "현재 모집 중인 포지션이 없습니다. 추후 업데이트를 확인해 주세요.",
+      "apply": "지원하기",
+      "department": "부서",
+      "location": "근무지",
+      "type": "고용형태"
+    },
+    "life": {
+      "title": "Life at CONNEXT",
+      "subtitle": "코넥스트에서의 일상"
     }
   },
   "Common": {

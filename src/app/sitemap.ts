@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 const BASE_URL = 'https://connext.co.kr';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ['', '/about', '/science'];
+  const pages = ['', '/about', '/science', '/ir', '/newsroom', '/bd', '/careers'];
   const locales = ['ko', 'en'];
 
   return pages.flatMap((page) =>

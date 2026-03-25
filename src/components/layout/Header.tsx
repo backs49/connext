@@ -11,6 +11,10 @@ const navItems = [
   { key: 'home', href: '/' },
   { key: 'about', href: '/about' },
   { key: 'science', href: '/science' },
+  { key: 'ir', href: '/ir' },
+  { key: 'newsroom', href: '/newsroom' },
+  { key: 'bd', href: '/bd' },
+  { key: 'careers', href: '/careers' },
 ] as const;
 
 export function Header() {
@@ -46,7 +50,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5">
             {navItems.map((item) => (
               <Link
                 key={item.key}

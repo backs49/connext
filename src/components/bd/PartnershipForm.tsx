@@ -105,8 +105,13 @@ export function PartnershipForm() {
                 id="name"
                 type="text"
                 className={cn(inputStyles, errors.name && 'border-red-400')}
+                aria-invalid={!!errors.name}
+                aria-describedby={errors.name ? 'name-error' : undefined}
                 {...register('name')}
               />
+              {errors.name && (
+                <p id="name-error" className="mt-1 text-xs text-red-400">{errors.name.message}</p>
+              )}
             </div>
             <div>
               <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-300">
@@ -116,8 +121,13 @@ export function PartnershipForm() {
                 id="email"
                 type="email"
                 className={cn(inputStyles, errors.email && 'border-red-400')}
+                aria-invalid={!!errors.email}
+                aria-describedby={errors.email ? 'email-error' : undefined}
                 {...register('email')}
               />
+              {errors.email && (
+                <p id="email-error" className="mt-1 text-xs text-red-400">{errors.email.message}</p>
+              )}
             </div>
           </div>
 
@@ -130,8 +140,13 @@ export function PartnershipForm() {
                 id="company"
                 type="text"
                 className={cn(inputStyles, errors.company && 'border-red-400')}
+                aria-invalid={!!errors.company}
+                aria-describedby={errors.company ? 'company-error' : undefined}
                 {...register('company')}
               />
+              {errors.company && (
+                <p id="company-error" className="mt-1 text-xs text-red-400">{errors.company.message}</p>
+              )}
             </div>
             <div>
               <label htmlFor="type" className="mb-2 block text-sm font-medium text-gray-300">
@@ -141,6 +156,8 @@ export function PartnershipForm() {
                 id="type"
                 className={cn(inputStyles, 'appearance-none', errors.type && 'border-red-400')}
                 defaultValue=""
+                aria-invalid={!!errors.type}
+                aria-describedby={errors.type ? 'type-error' : undefined}
                 {...register('type')}
               >
                 <option value="" disabled />
@@ -149,6 +166,9 @@ export function PartnershipForm() {
                 <option value="cdmo">{t('typeCDMO')}</option>
                 <option value="other">{t('typeOther')}</option>
               </select>
+              {errors.type && (
+                <p id="type-error" className="mt-1 text-xs text-red-400">{errors.type.message}</p>
+              )}
             </div>
           </div>
 
@@ -160,8 +180,13 @@ export function PartnershipForm() {
               id="message"
               rows={5}
               className={cn(inputStyles, 'resize-none', errors.message && 'border-red-400')}
+              aria-invalid={!!errors.message}
+              aria-describedby={errors.message ? 'message-error' : undefined}
               {...register('message')}
             />
+            {errors.message && (
+              <p id="message-error" className="mt-1 text-xs text-red-400">{errors.message.message}</p>
+            )}
           </div>
 
           {error && (

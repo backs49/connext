@@ -25,6 +25,7 @@ export function TeamCard({ member }: TeamCardProps) {
           viewBox="0 0 24 24"
           strokeWidth={1}
           stroke="currentColor"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"

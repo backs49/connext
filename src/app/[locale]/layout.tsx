@@ -7,6 +7,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { BackToTop } from '@/components/layout/BackToTop';
 import { getOrganizationSchema, getWebSiteSchema } from '@/lib/structured-data';
 import '../globals.css';
 
@@ -65,8 +66,9 @@ export default async function LocaleLayout({
       <body className="min-h-screen flex flex-col antialiased bg-white text-foreground">
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
       {process.env.NEXT_PUBLIC_GA_ID && (

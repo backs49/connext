@@ -302,6 +302,48 @@
       "subtitle": "A day in the life at CONNEXT"
     }
   },
+  "Privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "CONNEXT Privacy Policy"
+    },
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": {
+      "purpose": "Purpose of Collecting Personal Information",
+      "purposeText": "The Company collects and processes personal information for the following purposes. The information collected will not be used beyond these stated purposes.\n\n• Responding to investor relations inquiries and providing IR materials\n• Processing business partnership and collaboration inquiries\n• Sending newsletters\n• Managing job applicants",
+      "items": "Personal Information Collected",
+      "itemsText": "The Company collects the following personal information:\n\n• Required: Name, email address\n• Optional: Organization (company name), inquiry details",
+      "retention": "Retention Period",
+      "retentionText": "The Company will promptly destroy personal information once the purpose of collection has been fulfilled, except where required by applicable laws.\n\n• Inquiry records: 3 years (Electronic Commerce Act)\n• Newsletter subscription: Until unsubscription",
+      "rights": "Rights of Data Subjects",
+      "rightsText": "Data subjects may exercise the following rights:\n\n• Request access to personal information\n• Request correction of errors\n• Request deletion\n• Request suspension of processing\n\nPlease contact info@connext.co.kr to exercise these rights.",
+      "security": "Security Measures",
+      "securityText": "The Company implements the following measures to ensure the security of personal information:\n\n• Administrative: Internal management plans, employee training\n• Technical: Access control for personal information systems, security software\n• Physical: Access control for server rooms and facilities",
+      "contact": "Privacy Officer",
+      "contactText": "The Company has designated a Privacy Officer to oversee personal information processing and handle complaints.\n\n• Email: info@connext.co.kr"
+    }
+  },
+  "Terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "CONNEXT website terms of service"
+    },
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": {
+      "general": "General Provisions",
+      "generalText": "These Terms govern the use of the website (connext.co.kr) operated by CONNEXT Inc. (the 'Company').",
+      "service": "Use of Services",
+      "serviceText": "• The Company provides company information, pipeline data, IR materials, news, and career information through this website.\n• Users may use the services after agreeing to these Terms.\n• Service content may change at the Company's discretion.",
+      "ip": "Intellectual Property",
+      "ipText": "All content published on this website (text, images, videos, logos, designs, etc.) is the intellectual property of the Company. Users may not reproduce, distribute, transmit, modify, or publish such content without prior written consent.",
+      "disclaimer": "Disclaimer",
+      "disclaimerText": "• The Company is not liable for service interruptions caused by force majeure events.\n• The Company is not responsible for service disruptions caused by user negligence.\n• Information on this website is for reference only and should not be used as the basis for investment or medical decisions.",
+      "governing": "Governing Law",
+      "governingText": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Korea. Any disputes shall be subject to the exclusive jurisdiction of the court having jurisdiction over the Company's location."
+    }
+  },
   "Common": {
     "learnMore": "Learn More",
     "close": "Close",

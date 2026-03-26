@@ -23,6 +23,20 @@ export function MobileNav({ isOpen, onClose, navItems }: MobileNavProps) {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -35,6 +49,9 @@ export function MobileNav({ isOpen, onClose, navItems }: MobileNavProps) {
             onClick={onClose}
           />
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             className="fixed right-0 top-0 bottom-0 z-50 w-[85vw] max-w-80 bg-white shadow-2xl"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
@@ -47,6 +64,8 @@ export function MobileNav({ isOpen, onClose, navItems }: MobileNavProps) {
                 onClick={onClose}
                 className="rounded-full p-2 hover:bg-gray-100"
                 aria-label="Close menu"
+                // eslint-disable-next-line jsx-a11y/no-autofocus
+                autoFocus
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

@@ -4,7 +4,7 @@ const BASE_URL = 'https://connext.co.kr';
 const LAST_MODIFIED = new Date('2026-03-26');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ['', '/about', '/science', '/ir', '/newsroom', '/bd', '/careers'];
+  const pages = ['', '/about', '/science', '/ir', '/newsroom', '/bd', '/careers', '/privacy', '/terms'];
   const locales = ['ko', 'en'];
 
   return pages.flatMap((page) =>

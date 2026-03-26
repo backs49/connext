@@ -28,6 +28,7 @@ export function CEOMessage() {
                     viewBox="0 0 24 24"
                     strokeWidth={0.8}
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"

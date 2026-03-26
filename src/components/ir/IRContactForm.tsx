@@ -102,64 +102,76 @@ export function IRContactForm() {
           <div className="grid gap-6 sm:grid-cols-2">
             {/* Name */}
             <div>
-              <label className="mb-2 block text-sm font-medium text-white/80">
+              <label htmlFor="ir-name" className="mb-2 block text-sm font-medium text-white/80">
                 {t('name')}
               </label>
               <input
+                id="ir-name"
                 {...register('name')}
                 placeholder={t('name')}
                 className={inputStyles}
+                aria-invalid={!!errors.name}
+                aria-describedby={errors.name ? 'ir-name-error' : undefined}
               />
               {errors.name && (
-                <p className={errorStyles}>{errors.name.message}</p>
+                <p id="ir-name-error" className={errorStyles}>{errors.name.message}</p>
               )}
             </div>
 
             {/* Email */}
             <div>
-              <label className="mb-2 block text-sm font-medium text-white/80">
+              <label htmlFor="ir-email" className="mb-2 block text-sm font-medium text-white/80">
                 {t('email')}
               </label>
               <input
+                id="ir-email"
                 {...register('email')}
                 type="email"
                 placeholder={t('email')}
                 className={inputStyles}
+                aria-invalid={!!errors.email}
+                aria-describedby={errors.email ? 'ir-email-error' : undefined}
               />
               {errors.email && (
-                <p className={errorStyles}>{errors.email.message}</p>
+                <p id="ir-email-error" className={errorStyles}>{errors.email.message}</p>
               )}
             </div>
           </div>
 
           {/* Company */}
           <div>
-            <label className="mb-2 block text-sm font-medium text-white/80">
+            <label htmlFor="ir-company" className="mb-2 block text-sm font-medium text-white/80">
               {t('company')}
             </label>
             <input
+              id="ir-company"
               {...register('company')}
               placeholder={t('company')}
               className={inputStyles}
+              aria-invalid={!!errors.company}
+              aria-describedby={errors.company ? 'ir-company-error' : undefined}
             />
             {errors.company && (
-              <p className={errorStyles}>{errors.company.message}</p>
+              <p id="ir-company-error" className={errorStyles}>{errors.company.message}</p>
             )}
           </div>
 
           {/* Message */}
           <div>
-            <label className="mb-2 block text-sm font-medium text-white/80">
+            <label htmlFor="ir-message" className="mb-2 block text-sm font-medium text-white/80">
               {t('message')}
             </label>
             <textarea
+              id="ir-message"
               {...register('message')}
               rows={5}
               placeholder={t('message')}
               className={cn(inputStyles, 'resize-none')}
+              aria-invalid={!!errors.message}
+              aria-describedby={errors.message ? 'ir-message-error' : undefined}
             />
             {errors.message && (
-              <p className={errorStyles}>{errors.message.message}</p>
+              <p id="ir-message-error" className={errorStyles}>{errors.message.message}</p>
             )}
           </div>
 

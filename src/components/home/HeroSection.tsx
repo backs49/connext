@@ -96,9 +96,11 @@ export function HeroSection() {
               {t('ctaPipeline')}
             </Button>
           </Link>
-          <Button variant="outline-inverse" size="lg">
-            {t('ctaInvestor')}
-          </Button>
+          <Link href="/ir">
+            <Button variant="outline-inverse" size="lg">
+              {t('ctaInvestor')}
+            </Button>
+          </Link>
         </motion.div>
       </div>
 

@@ -39,6 +39,20 @@ export function NewsroomContent() {
   const featuredItem = filteredNews[0];
   const restItems = filteredNews.slice(1);
 
+  async function handleShare(title: string) {
+    const url = window.location.href;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, url });
+      } catch {
+        // User cancelled share
+      }
+    } else {
+      await navigator.clipboard.writeText(url);
+      alert(locale === 'ko' ? '링크가 복사되었습니다.' : 'Link copied to clipboard.');
+    }
+  }
+
   function formatDate(dateStr: string) {
     const date = new Date(dateStr);
     return date.toLocaleDateString(locale === 'ko' ? 'ko-KR' : 'en-US', {
@@ -109,7 +123,10 @@ export function NewsroomContent() {
                         <time className="text-sm text-gray-400">
                           {formatDate(featuredItem.date)}
                         </time>
-                        <button className="text-sm font-medium text-navy hover:text-bio transition-colors">
+                        <button
+                          onClick={() => handleShare(locale === 'ko' ? featuredItem.titleKo : featuredItem.title)}
+                          className="text-sm font-medium text-navy hover:text-bio transition-colors"
+                        >
                           {t('share')}
                         </button>
                       </div>
@@ -139,7 +156,10 @@ export function NewsroomContent() {
                           {locale === 'ko' ? item.summaryKo : item.summary}
                         </p>
                         <div className="mt-4 pt-4 border-t border-gray-50">
-                          <button className="text-sm font-medium text-navy hover:text-bio transition-colors">
+                          <button
+                            onClick={() => handleShare(locale === 'ko' ? item.titleKo : item.title)}
+                            className="text-sm font-medium text-navy hover:text-bio transition-colors"
+                          >
                             {t('share')}
                           </button>
                         </div>
